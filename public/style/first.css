@@ -1,0 +1,36 @@
+
+#first{
+    
+    display: flex;
+    flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url('../pic/first.jpeg'); /* Replace with the actual path to your image */
+      background-size: cover;
+      background-position: center;
+}
+#name{
+    font-size: 5vh;
+    color: white;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade 0.5s forwards;
+    animation-delay: 0.3s;
+  }
+#prof{
+    font-size: 3vh;
+    color: white;
+}
+
+.fade{
+    opacity: 0;
+    animation: fade 0.5s forwards;
+    animation-delay: 0.3s;
+}
+
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
