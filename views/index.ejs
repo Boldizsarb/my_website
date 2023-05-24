@@ -146,13 +146,41 @@
           <div class="content" id="sixth">
             <h1 id="getint">Get in touch</h1>
             <!-- Your content here -->
-            <div id="contactcontainer">
-              <form action="">
+            <div class="contact-wrapper">
+              <div id="contactcontainer">
+
+                <input type="text" id="fname" placeholder="Who are you?" required>  <br>
+                <p id="fnameError" ></p>
+                <input type="email" id="email" placeholder="Email address">
+                <p id="emailError" ></p>
+                <textarea name="massage" id="message" cols="30" rows="10" id="massage" placeholder="Massage comes here!"></textarea>
+                <p id="messageError" ></p>
                 
-              </form>
+                <div id="social">
+                  <ul>
+                    <li><img src="./pic/linkedin1.png" alt="Linked in icon" class="icons"></li>
+                    <li><img src="./pic/sap.png" alt="Whatsapp icon" class="icons"></li>
+                    <li><img src="./pic/git.png" alt="Github icon" class="icons"></li>
+                  </ul>
+  
+                </div>
+
+                <div class="containerd">
+                  <button id="btn"  onclick="Sendmail()">
+                      <p id="btnText">Submit</p>
+                      <div class="check-box">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                              <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                          </svg>
+                      </div>
+                  </button>
+                </div>
 
 
+              </div>
+              
 
+              
             </div>
               
           </div>
@@ -161,11 +189,19 @@
     
 </body>
 </html>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('R_qcHBrvSEaUHzZmJ')
+</script>
+
 <script src="/scripts/index.mjs"></script>
+<script src="/scripts/contact.mjs"></script>
 <style>
 
 </style>
-
+ 
 <script>
 
 
