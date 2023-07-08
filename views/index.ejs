@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/style/buble.css">
     <link rel="stylesheet" href="/style/timeline.css">
     <link rel="stylesheet" href="/style/contact.css">
+    <link rel="stylesheet" href="/style/works.css">
+    <link rel="stylesheet" href="/style/skill.css">
     <title>Document</title>
 </head>
 <body>
@@ -77,6 +79,18 @@
                 <span class="fade">n</span>
                 <span class="fade">t</span>
             </h3>
+
+            <div class="containert">
+              <div class="contenty">
+                <p id="learn">Learn more</p>
+                <a href="#second"><svg id="more-arrows">
+                  <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                  <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                  <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+                </svg></a>
+              </div>
+            </div>
+
           </div>
 
           <div class="content" id="second">
@@ -86,8 +100,20 @@
           </div>
 
           <div class="content" id="third">
-            <h1>Skills</h1>
+            <h1 id="h1skill">Skills</h1>
+            <div id="development">
+              <h2>Development</h2>
+
+            </div>
             <!-- Your content here -->
+
+
+
+
+
+
+
+
           </div>
 
           <div class="content" id="fourth">
@@ -139,8 +165,48 @@
           </div>
 
           <div class="content" id="fifth">
-            <h1>Some of my work</h1>
+            
             <!-- Your content here -->
+            <div id="workcontainer">
+              <h1 id="some">Some of my work</h1>
+            
+              
+             
+              <img src="../pic/arrow.png" alt="" onclick="next()" id="arrow">
+
+              <div class="cont actived" > 
+                <p>first called active</p>
+              </div>
+              <div class="cont">
+                <h2>Point of Interest db</h2>
+                <div class="images"> 
+                  <img src="../pic/big.jpg" alt="" class="bigpic">
+
+                </div>
+                
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea exercitationem consectetur quam alias, voluptatem delectus voluptas eum et libero nam veniam corrupti necessitatibus tempora veritatis totam. Dolorum repudiandae nihil fuga!
+              </div>
+              <div class="cont">
+                <p>third</p>
+              </div>
+              <div class="cont">
+                <p>fourth</p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
 
           <div class="content" id="sixth">
@@ -158,9 +224,9 @@
                 
                 <div id="social">
                   <ul>
-                    <li><img src="./pic/linkedin1.png" alt="Linked in icon" class="icons"></li>
-                    <li><img src="./pic/sap.png" alt="Whatsapp icon" class="icons"></li>
-                    <li><img src="./pic/git.png" alt="Github icon" class="icons"></li>
+                    <li><a href="https://www.linkedin.com/in/banfia-boldizsar-b1a1971bb/" target="_blank"><img src="./pic/linkedin1.png" alt="Linked in icon" class="icons"></li></a>
+                    <li><a href="https://wa.me/447341043492"><img src="./pic/sap.png" alt="Whatsapp icon" class="icons"></li></a>
+                    <li><a href="https://github.com/Boldizsarb" target="_blank"><img src="./pic/git.png" alt="Github icon" class="icons"></li></a>
                   </ul>
   
                 </div>
@@ -176,15 +242,9 @@
                   </button>
                 </div>
 
-
               </div>
-              
-
-              
             </div>
-              
           </div>
-
     </div>
     
 </body>
@@ -199,10 +259,43 @@
 <script src="/scripts/index.mjs"></script>
 <script src="/scripts/contact.mjs"></script>
 <style>
+.cont {
+  display: none;
+  width: 90%;
+  max-height: 100vh;
+  height: fit-content;
+  overflow: hidden;
+}
+.cont.actived {
+  display: block;
+}
 
+.cont.next {
+  transform: translateX(100%);
+}
+.bu{
+  margin-top: 50%;
+
+}
 </style>
  
 <script>
 
+
+
+  
+function next() {
+  var currentDiv = document.querySelector('.cont.actived');
+  var nextDiv = currentDiv.nextElementSibling;
+
+  if (nextDiv) {
+    currentDiv.classList.remove('actived');
+    nextDiv.classList.add('actived');
+  } else {
+    currentDiv.classList.remove('actived');
+    var allDivs = document.querySelectorAll('.cont');
+    allDivs[0].classList.add('actived');
+  }
+}
 
 </script>

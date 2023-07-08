@@ -1,0 +1,46 @@
+#workcontainer{
+    height: fit-content;
+    position: relative;
+    z-index: 0;
+ 
+  
+}
+#fifth{
+    background-color: black;
+    max-height: 100vh;
+    overflow: hidden;  /*this wont allow to be taller then 100vh*/
+}
+#some{
+    color: white;
+}
+#arrow{
+    width: 5vh;
+    height: 5vh;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    right: 9vh;
+ 
+}
+#arrow:hover {
+    width: 6vh;
+    height: 6vh;
+    transform: translateX(-10px);
+}
+.cont{
+    width: 100%;
+    height: fit-content;
+    color: white;
+}
+ .bigpic{
+    margin-left: 2vh;
+    width: 50vh;
+    height: 55vh;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); /* Adjust the angles as desired */
+} 
+
+.bigpic:hover {
+    transform:  rotateY(-10deg); /* Adjust the desired transformation */
+}
