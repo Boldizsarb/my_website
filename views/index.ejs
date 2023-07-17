@@ -169,29 +169,49 @@
             <!-- Your content here -->
             <div id="workcontainer">
               <h1 id="some">Some of my work</h1>
-            
-              
-             
+             <!-- The arrow  for the next one -->
               <img src="../pic/arrow.png" alt="" onclick="next()" id="arrow">
-
+              <!-- each cont class is a separate 'work' -->
               <div class="cont actived" > 
                 <p>first called active</p>
               </div>
+
               <div class="cont">
                 <h2>Point of Interest db</h2>
-                <div class="images"> 
-                  <img src="../pic/big.jpg" alt="" class="bigpic">
 
+                <div id="containerF"> <!--Flex -->
+               
+                  <div class="images"> 
+                    <img src="../pic/big.png" alt="" class="bigpic">
+                  </div>
+                  <div id="poitext">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea exercitationem consectetur quam alias, voluptatem delectus voluptas eum et libero nam veniam corrupti necessitatibus tempora veritatis totam. Dolorum repudiandae nihil fuga!
+                    <p>Tech used:</p> 
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>Node.js</li>
+                      <li>Express</li>
+                      <li>PostgreSQL</li>
+                      <li>Heroku</li>
+                    </ul>
+                  </div>
+                  
+                    
+                  
+                   
                 </div>
-                
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea exercitationem consectetur quam alias, voluptatem delectus voluptas eum et libero nam veniam corrupti necessitatibus tempora veritatis totam. Dolorum repudiandae nihil fuga!
+               
               </div>
+
               <div class="cont">
                 <p>third</p>
               </div>
+
               <div class="cont">
                 <p>fourth</p>
-              </div>
+              </div> 
 
             </div>
 
@@ -283,7 +303,7 @@
 
 
 
-  
+  // for the slides 
 function next() {
   var currentDiv = document.querySelector('.cont.actived');
   var nextDiv = currentDiv.nextElementSibling;

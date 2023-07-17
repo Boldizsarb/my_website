@@ -44,3 +44,7 @@
 .bigpic:hover {
     transform:  rotateY(-10deg); /* Adjust the desired transformation */
 }
+
+#containerF{
+    display: flex;
+}
