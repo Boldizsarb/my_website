@@ -173,7 +173,24 @@
               <img src="../pic/arrow.png" alt="" onclick="next()" id="arrow">
               <!-- each cont class is a separate 'work' -->
               <div class="cont actived" > 
-                <p>first called active</p>
+                <!--First slide!  -->
+                <h2>Flashcard application</h2>
+                <div id="containerF">
+                  <div class="images">
+
+                    <div class="slide"> <!--need to rewrite script due to delay   -->
+                      <img src="../pic/loginf.jpg" alt="" class="bigpic">
+                    </div>
+                    <div class="slide">
+                      <img src="../pic/homepage.jpg" alt="" class="bigpic">
+                    </div>
+
+                  </div>
+                  <div id="poitext">
+                    <h3>Flashy</h3>
+                  </div>
+
+                </div>
               </div>
 
               <div class="cont">
@@ -293,6 +310,7 @@
 
 <script src="/scripts/index.mjs"></script>
 <script src="/scripts/contact.mjs"></script>
+<script src="/scripts/slideshow.mjs"></script>
 <style>
 .cont {
   display: none;
@@ -315,20 +333,6 @@
 </style>
  
 <script>
-  // slide show 
-  const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-
-function showSlide(n) {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (n + slides.length) % slides.length;
-  slides[currentSlide].classList.add('active');
-}
-
-setInterval(() => {
-  showSlide(currentSlide + 1);
-},5000); // Change slide every 3 seconds
-
 
 
   // for the slides 
