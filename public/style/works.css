@@ -8,7 +8,7 @@
 #fifth{
     background-color: black;
     max-height: 100vh;
-    overflow: hidden;  /*this wont allow to be taller then 100vh*/
+    overflow: auto;  /*this wont allow to be taller then 100vh*/
 }
 #some{
     color: white;
@@ -58,6 +58,7 @@
 #poitext{
     /* flex 1 evens the space out between the two  */
     flex: 1;
+   
 }
 
 .bigpic:hover {
@@ -66,7 +67,7 @@
 
 #containerF{
     display: flex;
-    flex-direction: row;
+    flex-direction: wrap;
     overflow: auto;
 
 }
@@ -103,42 +104,51 @@ text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   @media (max-width: 800px) {
     #containerF {
       flex-direction: column;
-      overflow: scroll;
+      overflow: auto;
+      max-height: 100%;
+
+    
+   
+     
      
     }
     #poitext{
-        flex: initial;
-        flex: 1;
-        order: 1;
+        flex-basis: 100%;
+        max-height: 50vh;
+        min-height: 200%;
+        
     }
     .bigpic{
-        width: 100%;
-        height: auto;
+        width: 30vh;
+        height: 30vh;
     }
     .slide{
         position: relative;
+         /*if it is not relative the pictures just disappears*/
         opacity: 1;
+        width: 35vh;
+        height: 35vh;
     
     }
     .images{
         display: flex;
-        overflow: scroll;
-        flex-direction: row;
-        /* if the direction is column then its a mess */
-        
+        width: 100%;
+        overflow: auto;
        
         
+        /* if the direction is column then its a mess */
     }
     .cont{
         overflow: scroll;
+        max-width: none;
+        
     }
+    #workcontainer{
+       overflow: auto;
+    }
+    
    
-    /* #workcontainer{
-        overflow: scroll;
-    }
-    #fifth{
-        overflow: scroll;
-    } */
+    
    
     
   }
