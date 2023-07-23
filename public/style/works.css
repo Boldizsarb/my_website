@@ -58,6 +58,7 @@
 #poitext{
     /* flex 1 evens the space out between the two  */
     flex: 1;
+    padding-left: 1vh;
    
 }
 
@@ -87,7 +88,8 @@ text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   text-shadow: 3px 3px 20px #e9e8ee,
     -2px 1px 30px #5237dd;
 }
-.slide {
+/* All slide classes are needed! */
+.slide, .slide1, .slide2{
     position: absolute;
     top: 0;
     left: 0;
@@ -98,7 +100,7 @@ text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
     transition: opacity 1.0s ease-in-out;
   }
   
-  .slide.active {
+  .slide.active, .slide1.active, .slide2.active {
     opacity: 1;
   }
   @media (max-width: 800px) {
@@ -106,10 +108,6 @@ text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
       flex-direction: column;
       overflow: auto;
       max-height: 100%;
-
-    
-   
-     
      
     }
     #poitext{
@@ -122,7 +120,7 @@ text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
         width: 30vh;
         height: 30vh;
     }
-    .slide{
+    .slide, .slide1, .slide2{
         position: relative;
          /*if it is not relative the pictures just disappears*/
         opacity: 1;
