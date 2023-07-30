@@ -33,3 +33,6 @@ setInterval(() => {
   showSlide1(currentSlide1 + 1);
   showSlide2(currentSlide1 + 1);
 },5000);
+
+
+// each slide show need a custom function 

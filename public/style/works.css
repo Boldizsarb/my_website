@@ -5,6 +5,19 @@
  
   
 }
+.peek {
+    text-shadow: none; /* Resetting any existing text shadow */
+    transition: text-shadow 0.3s ease,font-size 0.3s ease;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Apply the white and thick text shadow on hover */
+  .peek:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+    font-size: 16px;
+  }
+
 #fifth{
     background-color: black;
     max-height: 100vh;
@@ -59,6 +72,7 @@
     /* flex 1 evens the space out between the two  */
     flex: 1;
     padding-left: 1vh;
+    letter-spacing: 0.1em;
    
 }
 
