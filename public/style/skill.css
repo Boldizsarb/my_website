@@ -1,6 +1,39 @@
 #third{
-    background-color: black;
+ background-color: black;
+ color: white;
+   
 }
 #h1skill{
     color: white;
 }
+.dev-list {
+    list-style: none;
+    width: 50%;
+   
+  }
+  .devE {
+    margin: 5px 0;
+    
+    position: relative;
+    font-size: 2vh;
+    line-height: 1.5;
+    margin: 5px 0;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #5237dd; 
+    line-height: 1.5;
+  }
+  .devE:hover {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  }
+   .checklist li:before {
+    content: "✓";
+    color: #5237dd;
+    padding-right: 10px;
+    
+  }
+  .checklist{
+    width: 50%;
+    text-align: left;
+  }
