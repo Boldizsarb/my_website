@@ -102,36 +102,55 @@
           <div class="content" id="third">
             <h1 id="h1skill">Skills</h1>
             <div id="development">
-              <div>
-                
-                <h2><img src="../pic/cog.png" alt="A little cog"> Development:</h2>
-                <ul class="dev-list">
-                  <li class="devE">JavaScript</li>
-                  <li class="devE">Python</li>
-                  <li class="devE">HTML</li>
-                  <li class="devE">CSS3</li>
-                  <li class="devE">React</li>
-                  <li class="devE">Java</li>
-                  <li class="devE">Kotlin</li>
-                  <li class="devE">SQL</li>
-                  <li class="devE">MongoDB</li>
-                  <li class="devE">Node.js</li>
-                  <li class="devE">Jquery</li>
-                  <li class="devE">Kotlin</li>
-                </ul>
-              </div>
-              <div class="checklist">
-                <h2> <img src="../pic/bulb.png" alt="A little bulb">Knowledge:</h2>
-                <ul>
-                  <li class="knowL">Git / Github</li>
-                  <li class="knowL">UX</li>
-                  <li class="knowL">MVMC</li>
-                  <li class="knowL">ECMAScript 6</li>
-                  <li class="knowL">CCNA</li>
-                  <li class="knowL">Command Line</li>
-                </ul>
-              </div>
-              
+              <div class="left">
+                <div class="languageS">
+                  
+                  <h2><img src="../pic/cog.png" alt="A little cog"> Development:</h2>
+                  <ul class="dev-list">
+                    <li class="devE">JavaScript</li>
+                    <li class="devE">Python</li>
+                    <li class="devE">HTML</li>
+                    <li class="devE">CSS3</li>
+                    <li class="devE">React</li>
+                    <li class="devE">Java</li>
+                    <li class="devE">Kotlin</li>
+                    <li class="devE">SQL</li>
+                    <li class="devE">MongoDB</li>
+                    <li class="devE">Node.js</li>
+                    <li class="devE">Jquery</li>
+                    <li class="devE">Kotlin</li>
+                    <li class="devE">Ajax</li>
+                  </ul>
+                </div>
+                <div class="checklist">
+                  <h2> <img src="../pic/bulb.png" alt="A little bulb">Knowledge:</h2>
+                  <ul>
+                    <li class="knowL">Git / Github</li>
+                    <li class="knowL">UX</li>
+                    <li class="knowL">MVMC</li>
+                    <li class="knowL">ECMAScript 6</li>
+                    <li class="knowL">CCNA</li>
+                    <li class="knowL">Figma</li>
+                    <li class="knowL">Command Line</li>
+                    <li class="knowL">Machine Learning</li>
+                    <li class="knowL">Basic Data Analysis</li>
+                  </ul>
+                </div>
+              </div> <!-- left-->
+              <div class="right">
+
+                <div class="progresS">
+                  <h2> <img src="../pic/letter.png" alt="A little letter">Progress:</h2>
+                  <br>
+                  <p>University first year finished with the end result of 2:1 (Above 60%)</p>
+                  <p id="firstD" onclick="toggle()">University second year finished with the end result of <strong>First</strong> (Above 70%)</p>
+                  <div class="popupP fullscreen hidden ">
+                    <img src="../pic/secondyear.png" alt="Results" id="resultPic">
+                    <button id="close" onclick="toggle()">Close</button>
+                  </div>
+                  
+                </div>
+              </div> <!-- right-->
               
 
             </div>
@@ -399,6 +418,7 @@
 <script src="/scripts/index.mjs"></script>
 <script src="/scripts/contact.mjs"></script>
 <script src="/scripts/slideshow.mjs"></script>
+<script src="/scripts/click.mjs"></script>
 <style>
 .cont {
   display: none;
