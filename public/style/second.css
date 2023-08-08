@@ -2,3 +2,45 @@
     background-color: black;
     color: white; 
 }
+#mainContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 1vh;
+}
+#text1{
+    width: 50%;
+    flex: 1;
+}
+#image1{
+    width: 50%;
+    height: fit-content;
+    max-height: 90vh;
+    flex: 1;
+}
+#theone{
+    border-radius: 35px;
+    width: 95%;
+    max-height: fit-content;
+}
+
+@media (max-width: 768px) {
+
+    #mainContainer{
+        flex-direction: column;
+    }
+    #text1{
+        width: 100%;
+        order: 2;
+    }
+    #image1{
+        width: 100%;
+        order: 1;
+    }
+    #theone{
+        border-radius: 25px;
+        width: 100%;
+        max-height: fit-content;
+    }
+
+
+}

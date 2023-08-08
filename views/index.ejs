@@ -93,9 +93,23 @@
 
           </div>
 
-          <div class="content" id="second">
+          <div class="content" id="second">  <!-- About me second 100vh  -->
             <h1>Hey, I am Boldizsar</h1>
-            <h3>Motto: How you do anything is how you do everything!</h3>
+            <p>But everyone calls me Boyszy</p>
+            <div id="mainContainer">
+
+              <div id="text1">  <!-- left  -->
+                <h3>Motto: How you do anything is how you do everything!</h3>
+              </div>
+
+              <div id="image1"> <!-- right  -->
+                <img src="../pic/theone.png" alt="A little cog" id="theone">
+              </div>
+
+            </div>
+
+
+
             <!-- Your content here -->
           </div>
 
@@ -142,11 +156,16 @@
                 <div class="progresS">
                   <h2> <img src="../pic/letter.png" alt="A little letter">Progress:</h2>
                   <br>
-                  <p>University first year finished with the end result of 2:1 (Above 60%)</p>
+                  <p id="secondD" onclick="toggle2()">University first year finished with the end result of <strong>2:1</strong> (Above 60%)</p>
+                  <div class="popupP2 fullscreen hidden" >
+                    <img src="../pic/firstyear.png" alt="Results" id="resultPic">
+                    <h1 id="close" onclick="toggle2()">X</h1>
+                  </div>
+
                   <p id="firstD" onclick="toggle()">University second year finished with the end result of <strong>First</strong> (Above 70%)</p>
                   <div class="popupP fullscreen hidden ">
                     <img src="../pic/secondyear.png" alt="Results" id="resultPic">
-                    <button id="close" onclick="toggle()">Close</button>
+                    <h1 id="close" onclick="toggle()">X</h1>
                   </div>
                   
                 </div>
@@ -154,7 +173,7 @@
               
 
             </div>
-            <!-- Your content here -->
+            <!--  -->
 
 
 
