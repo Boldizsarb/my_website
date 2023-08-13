@@ -35,10 +35,10 @@
   display: flex;
 
 }
-.left{ /*portfolio pic */
+.lefty{ /*portfolio pic */
  flex: 1;
 }
-.right{ /*Text */
+.righty{ /*Text */
   padding: 1vh;
   flex: 1;
 }

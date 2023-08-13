@@ -53,8 +53,6 @@ ul li {
 }
 
 /* Additional styles for icons */
-
-
 input,  textarea {
   width: 100%;
   border: none;
@@ -98,10 +96,11 @@ input:focus, textarea:focus {
 .containerd{
     width: 40%;
     height: 20vh;
-    background: #0d0d0e;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
 }
 
 button{
