@@ -35,11 +35,11 @@
   display: flex;
 
 }
-.left{
+.left{ /*portfolio pic */
  flex: 1;
 }
-.right{
-  padding-left: 1vh;
+.right{ /*Text */
+  padding: 1vh;
   flex: 1;
 }
 #firstD, #secondD{
@@ -58,6 +58,7 @@
   z-index: 9999;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
 
 }
 #resultPic {
@@ -65,6 +66,7 @@
   max-height: 70%;
   display: block;
   margin: 0 auto;
+  border-radius: 25px;
 }
 .fullscreen {
   position: fixed;
@@ -74,7 +76,7 @@
 #close{
   position: absolute;
   top: 1%;
-  left: 93%;
+  left: 90%;
   color: red;
   cursor: pointer;
   display: inline-block;
@@ -118,3 +120,29 @@
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
+#cddownload {
+  cursor: pointer;
+  transition: text-shadow 0.3s ease; 
+  /* imagae */
+   
+}
+
+#cddownload:hover {
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); 
+}
+#cddownload img {
+  border: 2px solid transparent; /* Add a transparent border to the image */
+  transition: border-color 0.3s ease; /* Add a smooth transition effect */
+}
+#cddownload img {
+ /* Remove any default image spacing */
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+#cddownload:hover img {
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.7);  /* Change the border color to white on hover */
+}
+
+
+
+
