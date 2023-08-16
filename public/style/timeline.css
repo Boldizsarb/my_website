@@ -47,7 +47,7 @@
   }
   
   
-  #exp, #getint {
+  #exp, #getint, #some, #h1skill{  /*H1 ones for the effect */
     margin: auto;
     font-size: 3.5rem;
     font-weight: 300;

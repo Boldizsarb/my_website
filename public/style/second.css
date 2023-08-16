@@ -1,6 +1,7 @@
 #second{
     background-color: black;
     color: white; 
+    overflow: scroll;
 }
 #mainContainer{
     display: flex;
@@ -23,9 +24,7 @@
     width: 95%;
     max-height: fit-content;
 }
-#motto{
-    
-}
+
 
 @media (max-width: 768px) {
 
