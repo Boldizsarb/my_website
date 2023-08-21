@@ -44,6 +44,10 @@
 }
 #firstD, #secondD{
   cursor: pointer;
+  transition: text-shadow 0.3s;
+}
+#firstD:hover, #secondD:hover{
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 .fullscreen{
   background-color: rgb(0, 0,0, 0.8);
