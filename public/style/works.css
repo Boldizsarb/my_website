@@ -116,10 +116,24 @@ text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   .slide.active, .slide1.active, .slide2.active {
     opacity: 1;
   }
+
+  #tapp{
+    visibility: hidden;
+     color: white;
+     padding-left: 1vh;
+
+     opacity: 1;
+     transition: opacity 0.5s ease-in-out;
+    
+ }
+ #tapp.hidden1 {
+     opacity: 0;
+   }
   @media (max-width: 800px) {
     #arrow{
         left: 1vh;
          position: relative;
+         display: inline-block;
     }
     #containerF {
       flex-direction: column;
@@ -161,9 +175,16 @@ text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
     #workcontainer{
        overflow: auto;
     }
-    
-   
-    
-   
-    
+    #tapp{
+        visibility: visible;
+        color: white;
+        padding-left: 1vh;
+        margin-bottom: 1vh;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
   }
+  
+    
+
+

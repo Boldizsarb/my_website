@@ -261,7 +261,8 @@
             <div id="workcontainer">
               <h1 id="some">Some of my work</h1>
              <!-- The arrow  for the next one -->
-              <img src="../pic/arrow.png" alt="" onclick="next()" id="arrow">
+              <div class="arrowT"><img src="../pic/arrow.png" alt="" onclick="next()" id="arrow" > <strong id="tapp" class="hidden1">Tapp me!</strong> </div>
+               
               <!-- each cont class is a separate 'work' -->
               <div class="cont actived" > 
                 <!--First slide!  -->
@@ -484,7 +485,13 @@
 </style>
  
 <script>
- // hamburger menu
+ // tooltip
+ function toggleVisibility() {
+  var tapp = document.getElementById("tapp");
+  tapp.classList.toggle("hidden1");
+}
+
+setInterval(toggleVisibility, 3000);
 
 
 
