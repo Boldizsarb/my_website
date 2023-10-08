@@ -66,18 +66,32 @@
   box-sizing: border-box;
     /* it might gonna effect other elements as well due to * general selector */
   }
+  #fourth.expanded {
+    max-height: 100vh;
+  }
   
   #fourth {
-    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 8vh;
+
+    transition: max-height 0.5s ease-in-out;
+    cursor: pointer;
+    /* toggle until the above code*/
+    
+     box-sizing: border-box;
     background-color: #131313;
     background-image: url('../pic/sky.jpeg');
     background-size: cover;
     background-position: center;
-
     overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    
 
+  }
+  #quote{
+    color: white;
+    text-align: center;
   }
   
   /* The actual timeline (the vertical ruler) */
@@ -215,3 +229,8 @@
     left: 0%;
     }
   }
+  .space{
+    height: 5vh;
+    background-color: black;
+  }
+    

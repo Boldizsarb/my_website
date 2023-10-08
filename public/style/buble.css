@@ -12,8 +12,11 @@
     color: white;
     
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 1s ease-in-out;
     
+  }
+  #buble.visible {
+    opacity: 1;
   }
   #buble li {
     width: 2vh;

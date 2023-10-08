@@ -10,18 +10,15 @@
     list-style: none;
   }
   .devE {
+   
     position: relative;
     font-size: 2vh;
-    line-height: 1.5;
     padding: 20px;
     display: inline-block;
-    border-radius: 50%;
-    border: 2px solid #5237dd; 
-    line-height: 1.5;
+    border-bottom: 2px solid #5237dd;
+    margin-bottom: 10px;
   }
-  .devE:hover {
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
-  }
+  
    .checklist li:before {
     content: "✓";
     color: #5237dd;

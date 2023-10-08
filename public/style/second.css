@@ -3,6 +3,9 @@
     color: white; 
     overflow: scroll;
 }
+.bio{
+   
+}
 #mainContainer{
     display: flex;
     flex-direction: row;
@@ -16,12 +19,12 @@
 #image1{
     width: 50%;
     height: fit-content;
-    max-height: 90vh;
+    max-height: fit-content;
     flex: 1;
 }
 #theone{
     border-radius: 35px;
-    width: 95%;
+    width: 70%;
     max-height: fit-content;
 }
 
@@ -42,8 +45,43 @@
     #theone{
         border-radius: 25px;
         width: 100%;
-        max-height: fit-content;
+        max-height: 50%;
     }
 
 
 }
+#firstP{
+    display: none;
+}
+
+/* 
+ */
+ #animatedText {
+    font-size: 40px; /* Initial font size */
+    border-right: 3px solid #000; /* Create a blinking cursor */
+}
+
+#theone{
+    filter: grayscale(100%);
+   
+}
+#image1 {
+    
+    filter: blur(20px); /* Adjust the blur amount as needed */
+    opacity: 0; /* Initially hidden */
+    transition: filter 3s ease, opacity 2s ease; /* Transition for filter and opacity */
+    transition-delay: 1s;
+  }
+
+  @keyframes grayscaleFade {
+    from {
+      filter: grayscale(100%); /* Start with the image completely grayed out */
+    }
+    to {
+      filter: grayscale(0%); /* Gradually remove the grayscale filter */
+    }
+  }
+  #theone{
+    animation: grayscaleFade 4s ease forwards;
+    animation-delay: 4s;
+  }

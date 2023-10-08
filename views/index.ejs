@@ -21,11 +21,10 @@
   <!-- Bubble on big screen-->
   <div id="buble">
     <lu>
-      <a href="#first"><li><i>Intro</i></li></a>
       <a href="#second"><li><i>About</i></li></a>
       <a href="#third"><li><i>Skills</i></li></a>
-      <a href="#fourth"><li><i>Experience</i></li></a>
       <a href="#fifth"><li><i>Work</i></li></a>
+      <a href="#fourth"><li><i>Experience</i></li></a>
       <a href="#sixth"><li><i>Contact</i></li></a>
     </lu>
   </div>
@@ -38,82 +37,20 @@
 
     <div id="scrollable">
         
-        <div class="content" id="first">
-            <!-- <h1>Boldizsar Banfia</h1> -->
-            <!-- Your content here -->
-            <h1 id="name">
-                <span class="fade-in">B</span>
-                <span class="fade-in">o</span>
-                <span class="fade-in">l</span>
-                <span class="fade-in">d</span>
-                <span class="fade-in">i</span>
-                <span class="fade-in">z</span>
-                <span class="fade-in">s</span>
-                <span class="fade-in">a</span>
-                <span class="fade-in">r</span>
-                &nbsp;
-                <span class="fade-in">B</span>
-                <span class="fade-in">a</span>
-                <span class="fade-in">n</span>
-                <span class="fade-in">f</span>
-                <span class="fade-in">i</span>
-                <span class="fade-in">a</span>
-              </h1>
-            <!-- <p id="prof">Software Enginer Student</p> -->
-            <h3 id="prof">
-                <span class="fade">S</span>
-                <span class="fade">o</span>
-                <span class="fade">f</span>
-                <span class="fade">t</span>
-                <span class="fade">w</span>
-                <span class="fade">a</span>
-                <span class="fade">r</span>
-                <span class="fade">e</span>
-                &nbsp;
-                <span class="fade">E</span>
-                <span class="fade">n</span>
-                <span class="fade">g</span>
-                <span class="fade">i</span>
-                <span class="fade">n</span>
-                <span class="fade">e</span>
-                <span class="fade">e</span>
-                <span class="fade">r</span>
-                &nbsp;
-                <span class="fade">S</span>
-                <span class="fade">t</span>
-                <span class="fade">u</span>
-                <span class="fade">d</span>
-                <span class="fade">e</span>
-                <span class="fade">n</span>
-                <span class="fade">t</span>
-            </h3>
-
-            <div class="containert">
-              <div class="contenty">
-                <p id="learn">Learn more</p>
-                <a href="#second"><svg id="more-arrows">
-                  <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
-                  <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
-                  <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
-                </svg></a>
-              </div>
-            </div>
-
-          </div>
+       
 
           <div class="content" id="second">  <!-- About me second 100vh  -->
-            <h1>Formally known as Boldizsar;  </h1>
-            <p>Informally, feel free to go with the snappier "Boyszy."</p>
+            <h1 id="animatedText">Greetings, I am formally known as Boldizsar Banfia;  </h1>
+            <h3 id="firstP">Informally, feel free to go with the snappier "Boyszy."</h3>
             <div id="mainContainer">
 
               <div id="text1">  <!-- left  -->
-                <p> <strong>Greetings</strong> to the esteemed community of intellects!  </p>
-                <p>I am a graduate from Solent University with a focus on Software Engineering, driven by results and a passion for the field.</p>
-                <p> My educational background, combined with my ability to turn determination into tangible results, enables me to be trusted to deliver projects in timely manner.</p> <p>This in unison with my workhorse attitude and inquisitive nature, will allow me to quickly fit into the team seamlessly and provide a fresh perspective along with genuine enthusiasm for learning. </p>
+                <!-- Text is int javaScript-->
+                
               </div>
 
-              <div id="image1"> <!-- right  -->
-                <img src="../pic/theone.png" alt="A little cog" id="theone">
+              <div id="image1" > <!-- right  -->
+                <img src="../pic/theone1.jpg" alt="A pic of me" id="theone" class="cinematic-animation">
                 <br>
                 <h2 id="motto">Life Motto: <em>The way you do anything is the way you do everything! </em></h2>
               </div>
@@ -143,8 +80,7 @@
                     <li class="devE">SQL</li>
                     <li class="devE">MongoDB</li>
                     <li class="devE">Node.js</li>
-                    <li class="devE">Jquery</li>
-                    <li class="devE">Ajax</li>
+
                   </ul>
                 </div>
                 <div class="checklist">
@@ -166,13 +102,13 @@
                 <div class="progresS">
                   <h2> <img src="../pic/letter.png" alt="A little letter">Progress:</h2>
                   <br>
-                  <p id="secondD" onclick="toggle2()">University first year finished with the end result of <strong>2:1</strong> (Above 60%)</p>
+                  <h3 id="secondD" onclick="toggle2()">University first year finished with the end result of <strong>2:1</strong> (Above 60%) </h3>
                   <div class="popupP2 fullscreen hidden" >
                     <img src="../pic/firstyear.png" alt="Results" id="resultPic">
                     <h1 id="close" onclick="toggle2()">X</h1>
                   </div>
 
-                  <p id="firstD" onclick="toggle()">University second year finished with the end result of <strong>First</strong> (Above 70%)</p>
+                  <h3 id="firstD" onclick="toggle()">University second year finished with the end result of <strong>First</strong> (Above 70%)</h3>
                   <div class="popupP fullscreen hidden ">
                     <img src="../pic/secondyear.png" alt="Results" id="resultPic">
                     <h1 id="close" onclick="toggle()">X</h1>
@@ -188,63 +124,9 @@
             </div>
             <!--  -->
 
-
-
-
-
-
-
-
           </div>
 
-          <div class="content" id="fourth">
-            <h1 id="exp">Work Experience</h1>
-            <!-- Your content here -->
-          <div class="timeline-container"> 
-              <div class="timeline">
-                <div class="container left">
-                  <div class="conten">
-                    <h2 class="hh2">2022 - Present - Controller at Boarhunt</h2>
-                    <p>My role involves prioritising tasks effectively, ensuring efficient allocation or reposition of time and resources to maximise productivity. Develop and manage team schedules for successful project outcomes. Managing daily correspondence including high volume of phone calls and emails, while maintaining a supportive and inclusive environment for team members and clients.</p> 
-                    <p>Furthermore, I am also driving trucks, when the situation demands.</p>
-                  </div>
-                </div>
-                <div class="container right">
-                  <div class="conten">
-                    <h2 class="hh2">2021 - 2022 - Driver at Tesco</h2>
-                    <p>A front runner of the third largest retailer in the world. <br>The first and often only face of Tesco as a delivery driver during covid lockdown, my role involved distributing grocieries to clients / stores in a timely manner. My responsibilities frequently extended to encompass demand and supply analysis, in addition to formulating logistical solutions to autonomously address any challenges that arose.</p>
-                  </div>
-                </div>
-                <div class="container left">
-                  <div class="conten">
-                    <h2 class="hh2">2020 - 2021 - Bus driver at Contiki</h2>
-                    <p>Engaging in compensated travel—what a dream vocation. <br> I had the privilege of being chosen as a driver for the biggest bus travel company in the EU. Despite acquiring my license, the onset of the COVID-19 pandemic disrupted my plans merely a week prior to commencing training. Subsequently, I adapted by undertaking temporary roles.</p>
-                  </div>
-                </div>
-                <div class="container right">
-                  <div class="conten">
-                    <h2 class="hh2">2018 - 2020 - Health Care Assisstant at St Magnus</h2>
-                    <p>I was engaged in a professional capacity within a low-security unit, responsible for individuals with mental health challenges who had criminal backgrounds. My primary duty involved ensuring their safety and preventing harm to both themselves and others. This encompassed ongoing health observation, meticulous record-keeping, formulation of care plans, and providing comprehensive physical and mental support. As part of my career advancement, I pursued and attained a Level 3 Diploma in Care.</p>
-                  </div>
-                </div>
-                <div class="container left">
-                  <div class="conten">
-                    <h2 class="hh2">2017 - 2018 - Personal Assisstant at Snatch Motorsport</h2>
-                    <p>I served as the intermediary connecting the manager with both internal and external clients. My responsibilities encompassed proficiently managing the manager's calendar, coordinating meetings, and appointments, as well as overseeing matters related to MOTs and required parts. Additionally, I was responsible for arranging travel itineraries and effectively managing and up-keeping the yard.</p>
-                  </div>
-                </div>
-                <div class="container right">
-                  <div class="conten">
-                    <h2 class="hh2">2015 - 2017 - Croupier at Tropicana Las Vegas Casino</h2>
-                    <p>Subsequent to completing my education, I engaged in an extensive and rigorous training program spanning several months. During this period, I acquired comprehensive proficiency in all casino games, ultimately achieving the position of a croupier and later supervisor. This role encompassed an in-depth understanding of game rules, astute observation skills, and, notably, the adept supervision of live-hand games.</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-
-          </div>
+          
 
           <div class="content" id="fifth">
             
@@ -276,7 +158,9 @@
 
                   </div>
                   <div id="poitext">
-                    <h3>Flashy <strong class="peek"><a href="https://github.com/Boldizsarb/advenced_database" target="_blank">->    Have a peek</strong></a></h3>
+                    <h3>Flashy </h3>
+                    <a href="https://github.com/Boldizsarb/advenced_database" target="_blank">  <img src="../pic/gitHub.png" alt="Github icon" class="links"> </a>
+                    <a href="https://odd-jeans-hare.cyclic.app/" target="_blank">  <img src="../pic/link.png" alt="Link icon" class="links"> </a>
                     <p>User-specific data-driven full-stack flashcard application with responsive design.</p>
                     <p>The user is key in the app since every data is user-specific. Upon login or registering, the password is hashed and stored on a different cluster in Mongo.</p>
                     <p>As a normal flashcard application, the user can create cards that may contain texts or pictures, can categorise, search and display them in two different ways.</p>
@@ -299,7 +183,7 @@
 
               <div class="cont">
                 <h2>Point of Interest Website</h2>
-
+               
                 <div id="containerF"> <!--Flex -->
                
                   <div class="images"> 
@@ -316,7 +200,8 @@
                     
                   </div>
                   <div id="poitext">
-                    <h3>Working concept of Point of Interest creator, using OS map and React<strong class="peek"><a href="https://github.com/Boldizsarb/point_of_interest_react" target="_blank">->    Have a peek</strong></a></h3>
+                    <h3>Working concept of Point of Interest creator, using OS map and React</h3>
+                    <a href="https://github.com/Boldizsarb/point_of_interest_react" target="_blank">  <img src="../pic/gitHub.png" alt="Github icon" class="links"> </a>
                     <p>The website enables users to look up a point of interest on the map, create one, rate them, upload pictures and share reviews. </p>
                     <p>The user has to be logged in otherwise the API prevents post requests. The user credentials are stored in cookies.</p> 
                     <p>The main highlight is on the server-side <bold>ECMAScript 6</bold> compliant, MVC architecture rest API, which is later also utilised in the Android application, and the data accessable on both platforms.</p>
@@ -361,7 +246,8 @@
                   </div>
 
                   <div id="poitext">
-                    <h3>POI App <strong class="peek"><a href="https://github.com/Boldizsarb/point_of_interest_android_app" target="_blank">->    Have a peek</strong></a></h3>
+                    <h3>Point of Interest Android App </a></h3>
+                    <a href="https://github.com/Boldizsarb/point_of_interest_android_app" target="_blank">  <img src="../pic/gitHub.png" alt="Github icon" class="links"> </a>
                     <p>Entire application is written in Kotlin. </p>
                     <p>XML layout </p>
                     <p>Permissions used for the GPS listener. </p>
@@ -390,16 +276,62 @@
             </div>
 
 
+          </div>
+          
+          <div class="space">
+
+          </div>
+          <!-- employment -->
+          <div class="content" id="fourth">
+            <h1 id="exp">Employment History (Click)</h1>
+            <h3 id="quote">There is no such thing as a job that is ever “beneath” me or anyone else.</h3>
+            <!-- Your content here -->
+            <div class="timeline-container"> 
+              <div class="timeline">
+                <div class="container left">
+                  <div class="conten">
+                    <h2 class="hh2">2022 - Present - Controller at Boarhunt</h2>
+                    <p>My role involves prioritising tasks effectively, ensuring efficient allocation or reposition of time and resources to maximise productivity. Develop and manage team schedules for successful project outcomes. Managing daily correspondence including high volume of phone calls and emails, while maintaining a supportive and inclusive environment for team members and clients.</p> 
+                    <p>Furthermore, I am also driving trucks, when the situation demands.</p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="conten">
+                    <h2 class="hh2">2021 - 2022 - Driver at Tesco</h2>
+                    <p>A front runner of the third largest retailer in the world. <br>The first and often only face of Tesco as a delivery driver during covid lockdown, my role involved distributing grocieries to clients / stores in a timely manner. My responsibilities frequently extended to encompass demand and supply analysis, in addition to formulating logistical solutions to autonomously address any challenges that arose.</p>
+                  </div>
+                </div>
+                <div class="container left">
+                  <div class="conten">
+                    <h2 class="hh2">2020 - 2021 - Bus driver at Contiki</h2>
+                    <p>Engaging in compensated travel—what a dream vocation. <br> I had the privilege of being chosen as a driver for the biggest bus travel company in the EU. Despite acquiring my license, the onset of the COVID-19 pandemic disrupted my plans merely a week prior to commencing training. Subsequently, I adapted by undertaking temporary roles.</p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="conten">
+                    <h2 class="hh2">2018 - 2020 - Health Care Assisstant at St Magnus</h2>
+                    <p>I was engaged in a professional capacity within a low-security unit, responsible for individuals with mental health challenges who had criminal backgrounds. My primary duty involved ensuring their safety and preventing harm to both themselves and others. This encompassed ongoing health observation, meticulous record-keeping, formulation of care plans, and providing comprehensive physical and mental support. As part of my career advancement, I pursued and attained a Level 3 Diploma in Care.</p>
+                  </div>
+                </div>
+                <div class="container left">
+                  <div class="conten">
+                    <h2 class="hh2">2017 - 2018 - Personal Assisstant at Snatch Motorsport</h2>
+                    <p>I served as the intermediary connecting the manager with both internal and external clients. My responsibilities encompassed proficiently managing the manager's calendar, coordinating meetings, and appointments, as well as overseeing matters related to MOTs and required parts. Additionally, I was responsible for arranging travel itineraries and effectively managing and up-keeping the yard.</p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="conten">
+                    <h2 class="hh2">2015 - 2017 - Croupier at Tropicana Las Vegas Casino</h2>
+                    <p>Subsequent to completing my education, I engaged in an extensive and rigorous training program spanning several months. During this period, I acquired comprehensive proficiency in all casino games, ultimately achieving the position of a croupier and later supervisor. This role encompassed an in-depth understanding of game rules, astute observation skills, and, notably, the adept supervision of live-hand games.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
 
 
-
-
-
-
-
-
-
-
+          </div>
+          <div class="space">
 
           </div>
 
@@ -476,6 +408,15 @@
 </style>
  
 <script>
+  // fourth 
+  const fourth = document.getElementById('fourth');
+
+fourth.addEventListener('click', function () {
+  fourth.classList.toggle('expanded');
+});
+
+
+
  // tooltip
  function toggleVisibility() {
   var tapp = document.getElementById("tapp");
@@ -500,5 +441,116 @@ function next() {
     allDivs[0].classList.add('actived');
   }
 }
+/////////
+window.onload = function () {
+  const animatedText = document.getElementById('animatedText');
+  const firstP = document.getElementById('firstP');
+  const textToTypeHeader = "Greetings, I am formally known as Boldizsar Banfia;";
+  const textToTypeParagraph = "Informally, feel free to go with the snappier \"Boyszy.\"";
+  let indexHeader = 0;
+  let indexParagraph = 0;
+
+
+  function typeHeader() {
+    animatedText.textContent = textToTypeHeader.slice(0, indexHeader);
+
+    if (indexHeader < textToTypeHeader.length) {
+      setTimeout(function () {
+        indexHeader++;
+        typeHeader();
+      }, 30); // Adjust the typing speed (in milliseconds) for faster typing
+    } else {
+      // Start typing "firstP" after the "h1" is finished
+      firstP.style.display = 'inline'; // making it visible when typing starts
+      typeParagraph();
+    }
+  }
+
+  function typeParagraph() {
+    firstP.textContent = textToTypeParagraph.slice(0, indexParagraph);
+
+    if (indexParagraph < textToTypeParagraph.length) {
+      setTimeout(function () {
+        indexParagraph++;
+        typeParagraph();
+      }, 30); // Adjust the typing speed (in milliseconds) for faster typing
+    }
+  }
+
+  // Start typing animation onload
+  typeHeader();
+};
+///
+document.addEventListener("DOMContentLoaded", function() {
+  // Select the image element
+  const image1 = document.getElementById("image1");
+
+  // Remove the blur effect and make the image visible gradually
+  setTimeout(() => {
+    image1.style.filter = "blur(0)";
+    image1.style.opacity = "1";
+  }, 1000); // Adjust the delay (in milliseconds) as needed
+});
+/// motto
+window.addEventListener("DOMContentLoaded", function() {
+    const mottoElement = document.getElementById("motto");
+    const mottoText = mottoElement.textContent;
+    const mottoTextContent = "Life Motto: The way you do anything is the way you do everything!";
+    let currentIndex = 0;
+
+    function typeText() {
+        if (currentIndex < mottoTextContent.length) {
+            mottoElement.textContent += mottoTextContent.charAt(currentIndex);
+            currentIndex++;
+            setTimeout(typeText, 30); // Adjust typing speed here
+        }
+    }
+
+    mottoElement.textContent = ""; // Clear existing text content before starting to type
+    setTimeout(typeText, 3500); // Add an 8-second delay before typing
+});
+// bubble 
+setTimeout(function() {
+  var bubble = document.getElementById("buble");
+  bubble.classList.add("visible");
+}, 4000);
+////// bio ///
+window.addEventListener("DOMContentLoaded", function() {
+            const text1Element = document.getElementById("text1");
+            const textContent = [ // this is where the text goes
+                "I am a distinguished graduate of Solent University, with a specialized focus in Software Engineering. My unwavering commitment to producing results is underpinned by my track record.",
+                "With a robust educational foundation bolstered by my uncanny knack for transforming determination into concrete outcomes, I stand as a paragon of trustworthiness when it comes to the prompt delivery of projects. My commitment to punctuality is so unshakable, it makes the punctual grandfather clock jealous!",
+                "In perfect harmony with my unwavering workhorse mentality and insatiable curiosity, I am poised to effortlessly integrate into the team's and be the dynamic duo of dedication and delightful inquisitiveness!"
+            ];
+            let currentIndex = 0;
+
+            function typeText() {
+                if (currentIndex < textContent.length) {
+                    const paragraph = document.createElement("p");
+                    paragraph.className = "bio";
+                    text1Element.appendChild(paragraph);
+
+                    let currentText = "";
+                    let textIndex = 0;
+
+                    function typeNextChar() {
+                        if (textIndex < textContent[currentIndex].length) {
+                            currentText += textContent[currentIndex][textIndex];
+                            paragraph.textContent = currentText;
+                            textIndex++;
+                            setTimeout(typeNextChar, 10); // Adjust typing speed here
+                        } else {
+                            currentIndex++;
+                            setTimeout(typeText, 300); // Add a pause between paragraphs
+                        }
+                    }
+
+                    typeNextChar();
+                }
+            }
+
+            // Start typing after a delay
+            setTimeout(typeText, 3500); // Add an 8-second delay before typing
+        });
 
 </script>
